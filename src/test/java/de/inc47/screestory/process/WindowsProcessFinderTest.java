@@ -26,14 +26,14 @@ import org.junit.Test;
  *
  * @author Christoph Küpker
  */
-public class ProcessFinderImplTest {
+public class WindowsProcessFinderTest {
     
     private ProcessFinder pf;
-    private String processNameToBeTested = "javaw";
+    private String processNameToBeTested = "java.exe";
     
      @Before
     public void setup() {
-        pf = new ProcessFinderImpl();
+        pf = new WindowsProcessFinder();
     }
     
     @After
