@@ -19,6 +19,7 @@ package de.inc47.screestory.gui.tray;
 
 import java.awt.SystemTray;
 import java.awt.TrayIcon;
+import org.eclipse.swt.widgets.Shell;
 import org.junit.After;
 import static org.junit.Assert.*;
 import org.junit.Before;
@@ -34,7 +35,7 @@ public class ScreestoryTrayIconTest {
     
     @Before
     public void setup() {
-        icon = new ScreestoryTrayIcon();
+        icon = new ScreestoryTrayIcon(new Shell());
     }
     
     @After
